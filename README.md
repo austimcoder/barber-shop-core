@@ -15,9 +15,9 @@ If all the chairs and there is no customer then barber will wait for new custome
 Low Level design:
 Basically the application uses BlockingQueue as chairs which holds the Customer entity which includes customer name and service for customer. A thread gets created for barberTask which basically consumes the customer in chairs one by one and go for sleep which is determined by the customer entity
                          
-                        Customer1 | Customer2 | ........... |CustomerN-1     
-Main thread(producer) -----------------------------------------------------> barberTask thread(consumer)
-                                    Chairs(Blocking queue)
+                              Customer1 | Customer2 | ........... |CustomerN-1     
+      Main thread(producer) -----------------------------------------------------> barberTask thread(consumer)
+                                                  Chairs(Blocking queue)
                                     
 Execution Instructions:
 1. Set the JAVA_HOME variable with home directory of java jdk
