@@ -9,6 +9,7 @@ barber will take for the particular customer till the customer vacate the chair 
 1. Hair Style - 30 seconds
 2. Shaving - 15 seconds
 3. Face massage - 60 seconds
+
 Once the service is completed for a customer the chair becomes available for another customer. If all the chairs are full application will deny customer with sorry message
 If all the chairs and there is no customer then barber will wait for new customer and as once new customer is rgistered barber will start again with the work
 
