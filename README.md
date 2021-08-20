@@ -1,6 +1,7 @@
 # barber-shop-core
 
 High Level Design:
+
 The barber shop project is basically implementation of producer consumer which leverage the BlockingQueue datastructure in java. It's basically an console application. 
 At the very start of execution, application asks for number of chairs in barber shop which is basically meant to define the size of blocking queue which represents number of customers it the shop can accomodate.
 Next the application ask for the options to continue with customer addition or exiting the application
@@ -14,6 +15,7 @@ Once the service is completed for a customer the chair becomes available for ano
 If all the chairs and there is no customer then barber will wait for new customer and as once new customer is rgistered barber will start again with the work
 
 Low Level design:
+
 Basically the application uses BlockingQueue as chairs which holds the Customer entity which includes customer name and service for customer. A thread gets created for barberTask which basically consumes the customer in chairs one by one and go for sleep which is determined by the customer entity
                          
                               Customer1 | Customer2 | ........... |CustomerN-1     
